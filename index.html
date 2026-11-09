@@ -19,12 +19,12 @@
 	<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
 	<link rel="preload" as="image" href="assets/video/hero_poster.jpg" />
 	<link rel="preload" as="font" type="font/woff2" href="assets/fonts/EncoreKid-Regular.woff2" crossorigin />
-	<link rel="stylesheet" href="css/style.css?v=469bfd41" />
+	<link rel="stylesheet" href="css/style.css?v=d9d851db" />
 	<link rel="stylesheet" href="css/edge.css?v=f5a3320f" />
 	<script src="js/config.js?v=3f3f60be"></script>
 	<script src="js/i18n.js?v=04f7b21d"></script>
 	<script src="js/edge-profile.js?v=1e4b72f5"></script>
-	<script src="js/main.js?v=5fa12bd9" defer></script>
+	<script src="js/main.js?v=f44c0f16" defer></script>
 </head>
 <body>
 
@@ -40,6 +40,11 @@
 					</video>
 					<div class="hero__veil"></div>
 					<div class="grain"></div>
+					<button class="lang hero__lang js-lang" type="button" aria-label="Ver en español" title="Ver en español">
+						<span class="lang__flag lang__flag--es" aria-hidden="true"></span>
+						<span class="lang__flag lang__flag--en" aria-hidden="true"></span>
+						<span class="lang__code"></span>
+					</button>
 
 					<div class="hero__content">
 						<h1 class="hero__logo">
@@ -190,17 +195,12 @@
 						<img class="contact__logo" src="assets/brand/mlk_logo_kraft.webp" alt="Malakito Games" loading="lazy" width="700" height="509" />
 						<div class="contact__btns">
 							<a class="btn btn--big js-email" href="#" data-i18n="contact.btn">Contact us</a>
-							<a class="btn btn--ghost js-presskit" href="#" target="_blank" rel="noopener" data-i18n="press.btn">Press kit</a>
+							<a class="btn btn--ghost" href="presskit/" data-i18n="press.btn">Press kit</a>
 						</div>
 					</div>
 
 					<footer class="footer">
 						<span>© <span class="js-year">2026</span> Malakito Games · <a class="footer__legal" href="legal.html" data-i18n="legal.link">Legal &amp; privacy</a></span>
-						<button class="lang js-lang" type="button" aria-label="Ver en español" title="Ver en español">
-							<span class="lang__flag lang__flag--es" aria-hidden="true"></span>
-							<span class="lang__flag lang__flag--en" aria-hidden="true"></span>
-							<span class="lang__code"></span>
-						</button>
 					</footer>
 				</div>
 			</div>

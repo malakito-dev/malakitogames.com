@@ -30,20 +30,19 @@
 		document.querySelectorAll(".js-steam-label").forEach((el) => {
 			el.innerHTML = S.steamUrl ? t("steam.wishlist") : t("steam.soon");
 		});
-		const btn = document.querySelector(".js-lang");
-		if (btn) {
+		document.querySelectorAll(".js-lang").forEach((btn) => {
 			const other = lang === "en" ? "es" : "en";
 			btn.dataset.target = other;
 			btn.title = btn.ariaLabel = t("lang.switch");
 			btn.querySelector(".lang__code").textContent = other.toUpperCase();
-		}
+		});
 	}
-	document.querySelector(".js-lang")?.addEventListener("click", () => {
+	document.querySelectorAll(".js-lang").forEach((b) => b.addEventListener("click", () => {
 		lang = lang === "en" ? "es" : "en";
 		store.set(lang);
 		applyLang();
 		if (window.__onLang) window.__onLang();
-	});
+	}));
 	applyLang();
 
 	// ============ Steam: un solo enlace para todos los botones ============

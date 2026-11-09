@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Encore House — Press kit · Malakito Games</title>
+	<meta name="description" content="Press kit for Encore House, an atmospheric horror puzzle game where your voice is your lifeline. Fact sheet, screenshots, logos, key art and trailer." />
+	<meta name="theme-color" content="#0b0907" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Encore House — Press kit" />
+	<meta property="og:description" content="Fact sheet, screenshots, logos, key art and trailer of Encore House, by Malakito Games." />
+	<meta property="og:image" content="https://malakitogames.com/assets/brand/og_image.jpg" />
+	<meta property="og:url" content="https://malakitogames.com/presskit/" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="icon" href="../assets/brand/favicon.ico" sizes="any" />
+	<link rel="icon" type="image/png" href="../assets/brand/favicon.png" />
+	<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png" />
+	<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/EncoreKid-Regular.woff2" crossorigin />
+	<link rel="stylesheet" href="../css/style.css?v=d9d851db" />
+	<link rel="stylesheet" href="../css/edge.css?v=f5a3320f" />
+	<script src="../js/config.js?v=3f3f60be"></script>
+	<style>
+		/* ---------- Press kit: solo lo propio de esta página; el resto viene de style.css ---------- */
+		.pk-hero .sheet__in { min-height: min(86svh, 820px); display: grid; place-items: center; }
+		.pk-hero .band__veil { background: radial-gradient(ellipse at 50% 45%, rgba(9, 7, 5, 0.3), rgba(9, 7, 5, 0.88) 75%); }
+		.pk-hero__content { position: relative; z-index: 2; text-align: center; padding: 70px var(--gutter) calc(var(--edge-h) * 0.9); }
+		.pk-hero__logo { width: min(560px, 80vw); margin: 0 auto 0.4rem; filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.8)); }
+		.pk-kicker { font: 400 clamp(1.4rem, 3vw, 2rem)/1 var(--font-display); color: var(--kraft); letter-spacing: 0.18em; text-transform: uppercase; margin: 0 0 1.2rem; text-shadow: 0 3px 0 rgba(0, 0, 0, 0.6); }
+		.pk-hero__lead { margin: 0 auto 2rem; max-width: 46ch; font-size: 1.1em; color: var(--paper); text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9); }
+		.pk-cta { display: flex; gap: 1rem 1.4rem; flex-wrap: wrap; justify-content: center; align-items: center; }
+		.pk-cta__note { width: 100%; margin: 0.4rem 0 0; font-size: 0.85rem; color: var(--paper-faint); }
+		.btn--dl::before { content: ""; width: 0.9em; height: 0.9em; margin-right: 0.15em; background: currentColor;
+			-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11 2h2v11.6l4.3-4.3 1.4 1.4L12 17.4l-6.7-6.7 1.4-1.4 4.3 4.3zM4 19h16v2H4z'/%3E%3C/svg%3E") center / contain no-repeat;
+			mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11 2h2v11.6l4.3-4.3 1.4 1.4L12 17.4l-6.7-6.7 1.4-1.4 4.3 4.3zM4 19h16v2H4z'/%3E%3C/svg%3E") center / contain no-repeat; }
+
+		/* ---- ficha técnica: hoja de papel kraft pegada con cinta ---- */
+		.pk-facts { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+		.pk-sheet {
+			position: relative; color: #1d130a;
+			padding: clamp(26px, 3.4vw, 44px) clamp(22px, 3.2vw, 44px);
+			background: #e2cead;
+			box-shadow: 0 22px 50px rgba(0, 0, 0, 0.7);
+			transform: rotate(0.7deg);
+		}
+		.pk-sheet::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+			background: url("../assets/tex/cardboard_grain.jpg") center / 300px; mix-blend-mode: multiply; opacity: 0.42; }
+		.pk-sheet > * { position: relative; }
+		.pk-sheet .tape { position: absolute; z-index: 2; }
+		.pk-sheet h2 { font: 400 clamp(1.6rem, 3vw, 2.2rem)/1 var(--font-display); text-transform: uppercase; margin: 0 0 1.2rem; color: #1d130a; }
+		.pk-dl { display: grid; grid-template-columns: auto 1fr; gap: 0.75rem 1.3rem; margin: 0; align-items: baseline; }
+		.pk-dl dt { font: 400 1rem/1.4 var(--font-display); color: #5a3a1c; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+		.pk-dl dd { margin: 0; font-size: 1.02em; color: #1d130a; }
+		.pk-dl .nowrap { white-space: nowrap; }
+		.pk-dl a { color: #1d130a; text-decoration-color: rgba(29, 19, 10, 0.45); }
+		.pk-dl a:hover { color: #7a2a1f; }
+		.chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+		.chip { display: inline-flex; align-items: center; gap: 0.4em; padding: 0.12em 0.6em; font-size: 0.88em; line-height: 1.5; border-radius: 3px;
+			background: rgba(29, 19, 10, 0.1); box-shadow: inset 0 0 0 1px rgba(29, 19, 10, 0.32); }
+		.chip svg { width: 1em; height: 1em; fill: currentColor; flex: none; }
+		.pk-copy { margin-top: 1.4rem; font: 400 1.05rem/1 var(--font-display); background: none; border: 0; color: #3a2410; cursor: pointer; text-decoration: underline; padding: 0; }
+		.pk-copy:hover { color: #1d130a; }
+
+		/* ---- el juego: filas grandes con el vídeo en movimiento ---- */
+		.pk-about__lead { font-size: clamp(1.2rem, 1.6vw, 1.45rem); line-height: 1.5; color: var(--paper); text-align: center; margin: 0 auto clamp(2.6rem, 5vw, 4rem); max-width: 40ch; text-wrap: balance; }
+		.pk-rows { display: grid; gap: clamp(44px, 6vw, 84px); }
+		.pk-row { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(26px, 4vw, 60px); align-items: center; }
+		.pk-row:nth-child(even) .pk-row__media { order: 2; }
+		.pk-row__media { position: relative; aspect-ratio: 16 / 9; background: #000; box-shadow: 0 18px 44px rgba(0, 0, 0, 0.7); transform: rotate(-1deg); }
+		.pk-row:nth-child(even) .pk-row__media { transform: rotate(1deg); }
+		.pk-row__media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+		.pk-row__num { display: block; font: 400 1rem/1 var(--font-display); color: var(--paper-faint); letter-spacing: 0.2em; margin-bottom: 0.5rem; }
+		.pk-row h3 { font: 400 clamp(1.7rem, 2.8vw, 2.4rem)/1.05 var(--font-display); color: var(--kraft); text-transform: uppercase; margin: 0 0 0.9rem; text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5); }
+		.pk-row p { font-size: clamp(1.05rem, 1.2vw, 1.2rem); line-height: 1.6; color: var(--paper-dim); margin: 0; }
+
+		/* ---- capturas ---- */
+		.pk-shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(14px, 2vw, 26px); margin-top: 1.5rem; }
+		.pk-shots a { display: block; overflow: hidden; box-shadow: 0 14px 32px rgba(0, 0, 0, 0.65); cursor: zoom-in; }
+		.pk-shots img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; transition: transform 0.4s ease, filter 0.4s ease; filter: brightness(0.92); }
+		.pk-shots a:hover img { transform: scale(1.04); filter: brightness(1.08); }
+		.pk-shots__note { text-align: center; margin: 1.8rem auto 0; color: var(--paper-faint); font-size: 0.92rem; }
+
+		/* ---- estudio + contacto de prensa ---- */
+		.pk-studio { display: grid; grid-template-columns: 200px 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+		.pk-studio > img { width: 100%; filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.7)); }
+		.pk-cta--left { justify-content: flex-start; margin-top: 1.6rem; }
+		.pk-mailnote { margin: 1rem 0 0; font-size: 0.88rem; color: var(--paper-faint); }
+		.pk-mailnote a { color: var(--kraft); font-size: 1.1rem; }
+		.socials.pk-socials { margin: 1.4rem 0 0; }
+
+		.pk-top { position: absolute; top: 18px; left: var(--gutter); right: var(--gutter); z-index: 5; display: flex; justify-content: space-between; align-items: center; }
+		.pk-top a { font: 400 1rem/1 var(--font-display); color: var(--paper-dim); text-decoration: none; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); }
+		.pk-top a:hover { color: var(--kraft); }
+
+		@media (max-width: 860px) {
+			.pk-facts, .pk-row, .pk-studio { grid-template-columns: 1fr; }
+			.pk-row:nth-child(even) .pk-row__media { order: 0; }
+			.pk-studio > img { width: 150px; }
+		}
+		@media (max-width: 480px) {
+			.pk-dl { grid-template-columns: 1fr; gap: 0.1rem; }
+			.pk-dl dd { margin-bottom: 0.7rem; }
+			.pk-shots { grid-template-columns: 1fr; }
+		}
+	</style>
+</head>
+<body>
+	<main>
+
+		<!-- ============ PORTADA ============ -->
+		<section class="pk-hero">
+			<div class="sheet sheet--edge" style="--edge-x: -300px">
+				<div class="sheet__in">
+					<div class="band__bg" style="background-image:url('../assets/shots/shot_002_bg.webp')"></div>
+					<div class="band__veil"></div>
+					<div class="grain"></div>
+					<div class="pk-top">
+						<a href="../" data-i18n="nav.site">← malakitogames.com</a>
+						<button class="lang js-lang" type="button">
+							<span class="lang__flag lang__flag--es" aria-hidden="true"></span>
+							<span class="lang__flag lang__flag--en" aria-hidden="true"></span>
+							<span class="lang__code"></span>
+						</button>
+					</div>
+					<div class="pk-hero__content">
+						<img class="pk-hero__logo" src="../assets/brand/encore_house_logo.webp" alt="Encore House" width="1400" height="760" />
+						<p class="pk-kicker" data-i18n="kicker">Press kit</p>
+						<p class="pk-hero__lead" data-i18n="short">An atmospheric horror puzzle game where your voice is your lifeline: when you hear “Marco”, answer “Polo” into your mic to survive.</p>
+						<div class="pk-cta">
+							<a class="btn btn--big btn--dl js-drive" href="#" target="_blank" rel="noopener" data-i18n="dl">Download press kit</a>
+							<a class="btn btn--teaser btn--play js-trailer" href="#" data-i18n="trailer">Watch trailer</a>
+							<p class="pk-cta__note" data-i18n="dl.note">Logos, key art, 4K screenshots, gameplay GIFs and fact sheet (Google Drive · ZIP 92 MB)</p>
+						</div>
+					</div>
+				</div>
+				<div class="edge-lip"></div>
+			</div>
+		</section>
+
+		<!-- ============ FICHA TÉCNICA ============ -->
+		<section class="band">
+			<div class="sheet sheet--edge" style="--edge-x: -1130px">
+				<div class="sheet__in">
+					<div class="band__bg" style="background-image:url('../assets/shots/shot_007_bg.webp')"></div>
+					<div class="band__veil band__veil--deep"></div>
+					<div class="grain"></div>
+					<div class="band__content">
+						<div class="pk-facts">
+							<figure class="pinned pinned--tilt-l">
+								<img src="../assets/brand/capsule_main.webp" alt="Encore House key art" loading="lazy" width="1232" height="706" />
+								<span class="tape tape--tl tape--p3"></span><span class="tape tape--br tape--p4"></span>
+							</figure>
+							<div class="pk-sheet">
+								<span class="tape tape--tr tape--p4"></span>
+								<h2 data-i18n="facts.title">Fact sheet</h2>
+								<dl class="pk-dl js-facts">
+									<dt data-i18n="f.dev">Developer</dt><dd data-i18n="f.dev.v">Malakito Games (solo developer)</dd>
+									<dt data-i18n="f.pub">Publisher</dt><dd data-i18n="f.pub.v">Malakito Games (self-published)</dd>
+									<dt data-i18n="f.date">Release date</dt><dd data-i18n="f.date.v">2027 · Demo coming soon</dd>
+									<dt data-i18n="f.price">Price</dt><dd data-i18n="f.price.v">TBA</dd>
+									<dt data-i18n="f.plat">Platforms</dt><dd class="chips js-plat"></dd>
+									<dt data-i18n="f.lang">Languages</dt><dd class="chips" data-chips="langs"></dd>
+									<dt data-i18n="f.tags">Tags</dt><dd class="chips" data-chips="tags"></dd>
+									<dt>Steam</dt><dd><a class="js-steam nowrap" href="#" target="_blank" rel="noopener" data-i18n="f.steam.v">Encore House on Steam</a></dd>
+									<dt data-i18n="f.web">Website</dt><dd><a class="nowrap" href="../">malakitogames.com</a></dd>
+									<dt data-i18n="f.contact">Press contact</dt><dd><a class="js-mail nowrap" href="#">contact [at] malakitogames.com</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="edge-lip"></div>
+			</div>
+		</section>
+
+		<!-- ============ CAPTURAS ============ -->
+		<section class="band">
+			<div class="sheet sheet--edge" style="--edge-x: -1890px">
+				<div class="sheet__in">
+					<div class="band__bg" style="background-image:url('../assets/shots/shot_009_bg.webp')"></div>
+					<div class="band__veil band__veil--deep"></div>
+					<div class="grain"></div>
+					<div class="band__content">
+						<h2 class="title title--center" data-i18n="shots.title">Screenshots</h2>
+						<div class="pk-shots js-gallery">
+							<a href="../assets/shots/shot_002.webp"><img src="../assets/shots/shot_002.webp" alt="Encore House screenshot" loading="lazy" width="1920" height="1080" /></a>
+							<a href="../assets/shots/shot_003.webp"><img src="../assets/shots/shot_003.webp" alt="Encore House screenshot" loading="lazy" width="1920" height="1080" /></a>
+							<a href="../assets/shots/shot_001.webp"><img src="../assets/shots/shot_001.webp" alt="Encore House screenshot" loading="lazy" width="1920" height="1080" /></a>
+							<a href="../assets/shots/shot_006.webp"><img src="../assets/shots/shot_006.webp" alt="Encore House screenshot" loading="lazy" width="1920" height="1080" /></a>
+						</div>
+						<p class="pk-shots__note" data-i18n="shots.note">All 10 screenshots in 4K (3840×2160), plus logos and key art, are in the press kit download.</p>
+					</div>
+				</div>
+				<div class="edge-lip"></div>
+			</div>
+		</section>
+
+		<!-- ============ EL JUEGO ============ -->
+		<section class="band">
+			<div class="sheet sheet--edge" style="--edge-x: -560px">
+				<div class="sheet__in">
+					<div class="band__veil band__veil--solid"></div>
+					<div class="grain grain--strong"></div>
+					<div class="band__content">
+						<h2 class="title title--center" data-i18n="about.title">About the game</h2>
+						<p class="pk-about__lead" data-i18n="about">Some memories won’t stay buried: they demand an encore. A short horror game where you play Marco Polo with your microphone... and someone is chasing you.</p>
+						<div class="pk-rows">
+							<article class="pk-row">
+								<div class="pk-row__media"><video muted loop playsinline preload="none" poster="../assets/video/clip_marco_polo.jpg" data-clip="marco_polo"></video></div>
+								<div><span class="pk-row__num">01</span><h3>Marco Polo</h3><p data-i18n="m1">Play Marco Polo with your microphone while your memories hunt you down: they call out “Marco...”, and you answer “Polo!” into your mic at just the right volume to stay hidden. Whisper or shout, and they’ll find you.</p></div>
+							</article>
+							<article class="pk-row">
+								<div class="pk-row__media"><video muted loop playsinline preload="none" poster="../assets/video/clip_path.jpg" data-clip="path"></video></div>
+								<div><span class="pk-row__num">02</span><h3 data-i18n="m2.t">Fill the Star Path</h3><p data-i18n="m2">Step on the red stars on the floor. Fill them all to reach the next room. But be careful, something is following your footsteps...</p></div>
+							</article>
+							<article class="pk-row">
+								<div class="pk-row__media"><video muted loop playsinline preload="none" poster="../assets/video/clip_remote.jpg" data-clip="remote"></video></div>
+								<div><span class="pk-row__num">03</span><h3 data-i18n="m3.t">Use the Remote</h3><p data-i18n="m3">Use the remote to rotate walls and other objects. Turn the house in your favor and clear your way.</p></div>
+							</article>
+							<article class="pk-row">
+								<div class="pk-row__media"><video muted loop playsinline preload="none" poster="../assets/video/clip_puzzle.jpg" data-clip="puzzle"></video></div>
+								<div><span class="pk-row__num">04</span><h3 data-i18n="m4.t">Solve Puzzles</h3><p data-i18n="m4">Some rooms hide a puzzle... and something you’d rather not remember.</p></div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="edge-lip"></div>
+			</div>
+		</section>
+
+		<!-- ============ ESTUDIO + CONTACTO ============ -->
+		<section class="band band--last">
+			<div class="sheet">
+				<div class="sheet__in">
+					<div class="band__veil band__veil--solid"></div>
+					<div class="grain grain--strong"></div>
+					<div class="band__content">
+						<div class="pk-studio">
+							<img src="../assets/brand/mlk_logo_kraft.webp" alt="Malakito Games" loading="lazy" width="700" height="509" />
+							<div>
+								<h2 class="title" data-i18n="studio.title">About Malakito Games</h2>
+								<p data-i18n="studio">Malakito Games is an independent one-person studio founded in 2026, and Encore House is its first game. The idea came up in a conversation about summers at the swimming pool and the games of Marco Polo we used to play there: what if that childhood game were the core of a horror game, and the one calling “Marco” were hunting you down?</p>
+								<div class="pk-cta pk-cta--left">
+									<a class="btn btn--big js-contact" href="#" data-i18n="contact">Contact us</a>
+									<a class="btn btn--ghost btn--steam js-steam" href="#" target="_blank" rel="noopener"><span data-i18n="wishlist">Wishlist on Steam</span></a>
+								</div>
+								<p class="pk-mailnote js-mailnote" role="status" hidden></p>
+								<ul class="socials pk-socials js-socials"></ul>
+							</div>
+						</div>
+					</div>
+					<footer class="footer">
+						<span>© <span class="js-year">2026</span> Malakito Games · <a class="footer__legal" href="../legal.html" data-i18n="legal">Legal &amp; privacy</a></span>
+					</footer>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Ventana del tráiler (igual que en la portada) -->
+	<div class="lightbox js-trailerbox" hidden>
+		<button class="lightbox__close" aria-label="Close">×</button>
+		<div class="trailer__frame"></div>
+	</div>
+	<!-- Visor de capturas -->
+	<div class="lightbox js-lightbox" hidden>
+		<button class="lightbox__close" aria-label="Close">×</button>
+		<button class="lightbox__prev" aria-label="Previous">‹</button>
+		<img alt="" />
+		<button class="lightbox__next" aria-label="Next">›</button>
+	</div>
+
+	<script>
+	(() => {
+		const S = window.SITE || {};
+		const T = {
+			en: {
+				"nav.site": "← malakitogames.com", kicker: "Press kit",
+				short: "An atmospheric horror puzzle game where your voice is your lifeline: when you hear “Marco”, answer “Polo” into your mic to survive.",
+				dl: "Download press kit", trailer: "Watch trailer",
+				"dl.note": "Logos, key art, 4K screenshots, gameplay GIFs and fact sheet (Google Drive · ZIP 92 MB)",
+				"facts.title": "Fact sheet",
+				"f.dev": "Developer", "f.dev.v": "Malakito Games (solo developer)",
+				"f.pub": "Publisher", "f.pub.v": "Malakito Games (self-published)",
+				"f.date": "Release date", "f.date.v": "2027 · Demo coming soon",
+				"f.price": "Price", "f.price.v": "TBA",
+				"f.plat": "Platforms", "f.lang": "Languages", "f.tags": "Tags",
+				"f.web": "Website", "f.contact": "Press contact",
+				langs: ["English", "Spanish (Spain)", "Spanish (Latin America)"],
+				tags: ["Horror", "Atmospheric", "Singleplayer", "Indie", "Puzzle", "First-Person", "Voice Control"],
+				"f.steam.v": "Encore House on Steam",
+				"about.title": "About the game",
+				about: "Some memories won’t stay buried: they demand an encore. A short horror game where you play Marco Polo with your microphone... and someone is chasing you.",
+				m1: "Play Marco Polo with your microphone while your memories hunt you down: they call out “Marco...”, and you answer “Polo!” into your mic at just the right volume to stay hidden. Whisper or shout, and they’ll find you.",
+				"m2.t": "Fill the Star Path", m2: "Step on the red stars on the floor. Fill them all to reach the next room. But be careful, something is following your footsteps...",
+				"m3.t": "Use the Remote", m3: "Use the remote to rotate walls and other objects. Turn the house in your favor and clear your way.",
+				"m4.t": "Solve Puzzles", m4: "Some rooms hide a puzzle... and something you’d rather not remember.",
+				"shots.title": "Screenshots",
+				"shots.note": "All 10 screenshots in 4K (3840×2160), plus logos and key art, are in the press kit download.",
+				"studio.title": "About Malakito Games",
+				studio: "Malakito Games is an independent one-person studio founded in 2026, and Encore House is its first game. The idea came up in a conversation about summers at the swimming pool and the games of Marco Polo we used to play there: what if that childhood game were the core of a horror game, and the one calling “Marco” were hunting you down?",
+				contact: "Contact us", mailok: "Email copied to your clipboard",
+				wishlist: "Wishlist on St<span class=\"mirror\">e</span>am",
+				legal: "Legal &amp; privacy", "lang.switch": "Ver en español",
+				title: "Encore House — Press kit · Malakito Games",
+			},
+			es: {
+				"nav.site": "← malakitogames.com", kicker: "Kit de prensa",
+				short: "Un juego de terror atmosférico y puzles en el que tu voz es tu salvavidas: cuando escuches “Marco”, responde “Polo” por el micrófono para sobrevivir.",
+				dl: "Descargar kit de prensa", trailer: "Ver tráiler",
+				"dl.note": "Logos, key art, capturas en 4K, GIFs de gameplay y ficha técnica (Google Drive · ZIP 92 MB)",
+				"facts.title": "Ficha técnica",
+				"f.dev": "Desarrollador", "f.dev.v": "Malakito Games (desarrollador en solitario)",
+				"f.pub": "Editor", "f.pub.v": "Malakito Games (autoeditado)",
+				"f.date": "Lanzamiento", "f.date.v": "2027 · Demo próximamente",
+				"f.price": "Precio", "f.price.v": "Por anunciar",
+				"f.plat": "Plataformas", "f.lang": "Idiomas", "f.tags": "Etiquetas",
+				"f.web": "Web", "f.contact": "Contacto de prensa",
+				langs: ["Inglés", "Español de España", "Español de Hispanoamérica"],
+				tags: ["Terror", "Ambientales", "Un jugador", "Indie", "Puzles", "Primera persona", "Control de voz"],
+				"f.steam.v": "Encore House en Steam",
+				"about.title": "Acerca del juego",
+				about: "Hay recuerdos que no se quedan enterrados: piden un Encore. Un juego de terror corto en el que juegas al Marco Polo con tu micrófono... y alguien te persigue.",
+				m1: "Juega al Marco Polo con tu micrófono mientras te persiguen tus recuerdos: te gritan “Marco...”, responde “¡Polo!” por el micrófono al volumen correcto para no ser encontrado. Si susurras o gritas, te encontrarán.",
+				"m2.t": "Rellena el Camino de Estrellas", m2: "Pisa las estrellas rojas del suelo. Rellénalas todas para avanzar a la siguiente sala. Pero ten cuidado, algo sigue tus pasos...",
+				"m3.t": "Utiliza el Mando a Distancia", m3: "Usa el mando a distancia para girar paredes y otros objetos. Cambia la casa a tu favor para abrirte paso.",
+				"m4.t": "Resuelve Puzles", m4: "Algunas habitaciones guardan un puzle… y algo que quizá prefieras no recordar.",
+				"shots.title": "Capturas",
+				"shots.note": "Las 10 capturas en 4K (3840×2160), los logos y el key art están en la descarga del kit de prensa.",
+				"studio.title": "Sobre Malakito Games",
+				studio: "Malakito Games es un estudio independiente de una sola persona fundado en 2026 y Encore House es su primer juego. La idea surgió en una conversación sobre los veranos en la piscina y las partidas de Marco Polo que jugábamos allí: ¿y si ese juego de la infancia fuera el centro de un juego de terror, y quien grita “Marco” te estuviera dando caza?",
+				contact: "Contáctanos", mailok: "Correo copiado al portapapeles",
+				wishlist: "Añádelo a tu lista de d<span class=\"mirror\">e</span>seados",
+				legal: "Aviso legal y privacidad", "lang.switch": "View in English",
+				title: "Encore House — Kit de prensa · Malakito Games",
+			},
+		};
+		const ICON = {
+			Windows: "M0 3.449 9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801",
+			Steam: "M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.522 2.031 4.522 4.527s-2.028 4.525-4.524 4.525h-.104l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z",
+			YouTube: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z",
+		TikTok: "M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z",
+		Instagram: "M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077",
+		Reddit: "M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z",
+			Discord: "M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z",
+		};
+		const svg = (d) => (d ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>` : "");
+
+		// ---------- idioma: ?lang=, o el elegido en la web, o inglés ----------
+		const store = { get() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }, set(v) { try { localStorage.setItem("lang", v); } catch (e) {} } };
+		const q = new URLSearchParams(location.search).get("lang");
+		let lang = T[q] ? q : (T[store.get()] ? store.get() : "en");
+		const t = (k) => T[lang][k] ?? T.en[k] ?? "";
+		const apply = () => {
+			document.documentElement.lang = lang;
+			document.title = t("title");
+			document.querySelectorAll("[data-i18n]").forEach((el) => { const v = t(el.dataset.i18n); if (v) el.innerHTML = v; });
+			document.querySelectorAll("[data-chips]").forEach((el) => { el.innerHTML = t(el.dataset.chips).map((x) => `<span class="chip">${x}</span>`).join(""); });
+			const b = document.querySelector(".js-lang");
+			const other = lang === "en" ? "es" : "en";
+			b.dataset.target = other; b.title = b.ariaLabel = t("lang.switch");
+			b.querySelector(".lang__code").textContent = other.toUpperCase();
+			document.querySelectorAll("video[data-clip]").forEach((v) => v.dataset.loaded && loadClip(v));
+		};
+
+		// ---------- vídeos de las mecánicas: se cargan al verse, en el idioma activo ----------
+		const loadClip = (v) => {
+			const base = `../assets/video/clip_${v.dataset.clip}${lang === "es" ? "_es" : ""}`;
+			if (v.dataset.loaded === base) return;
+			v.dataset.loaded = base;
+			v.innerHTML = `<source src="${base}.webm" type="video/webm"><source src="${base}.mp4" type="video/mp4">`;
+			v.load(); v.play().catch(() => {});
+		};
+		const io = new IntersectionObserver((es) => es.forEach((e) => {
+			const v = e.target;
+			if (e.isIntersecting) { loadClip(v); v.play().catch(() => {}); } else v.pause();
+		}), { rootMargin: "200px" });
+		document.querySelectorAll("video[data-clip]").forEach((v) => io.observe(v));
+
+		document.querySelector(".js-lang").addEventListener("click", () => { lang = lang === "en" ? "es" : "en"; store.set(lang); apply(); });
+		apply();
+
+		// ---------- enlaces desde config.js (lo mismo que usa la portada) ----------
+		const steam = (S.steamUrl || "https://store.steampowered.com/app/5219540/Encore_House/").replace("utm_medium=website", "utm_medium=presskit");
+		document.querySelectorAll(".js-steam").forEach((a) => (a.href = steam));
+		document.querySelectorAll(".js-drive").forEach((a) => { if (S.pressKitUrl) a.href = S.pressKitUrl; else a.hidden = true; });
+		document.querySelector(".js-plat").innerHTML = `<span class="chip">${svg(ICON.Windows)}Windows</span><span class="chip">${svg(ICON.Steam)}Steam</span>`;
+		const addr = S.emailUser ? `${S.emailUser}@${S.emailDomain}` : "";
+		document.querySelectorAll(".js-mail").forEach((a) => { a.href = `mailto:${addr}`; a.textContent = addr; });
+		const copy = (text) => (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject());
+		// Contacto: abre el correo si hay programa, y además copia la dirección y la enseña (si no lo hay, mailto no hace nada)
+		document.querySelectorAll(".js-contact").forEach((a) => {
+			a.href = `mailto:${addr}`;
+			a.addEventListener("click", () => {
+				copy(addr).catch(() => {});
+				const note = document.querySelector(".js-mailnote");
+				note.innerHTML = `<a href="mailto:${addr}">${addr}</a><br><span data-i18n="mailok">${t("mailok")}</span>`;
+				note.hidden = false;
+			});
+		});
+		const ul = document.querySelector(".js-socials");
+		[...(S.socials || []), S.discordUrl ? { name: "Discord", url: S.discordUrl, handle: "Discord" } : null].filter((s) => s && s.url).forEach((s) => {
+			const li = document.createElement("li");
+			li.innerHTML = `<a href="${s.url}" target="_blank" rel="noopener" title="${s.name}">${svg(ICON[s.name])}<span>${s.name}</span></a>`;
+			ul.appendChild(li);
+		});
+		document.querySelectorAll(".js-year").forEach((e) => (e.textContent = new Date().getFullYear()));
+
+		// ---------- ventanas: tráiler y capturas ----------
+		const openBox = (box) => { box.hidden = false; document.body.classList.add("no-scroll"); };
+		const closeBox = (box) => { box.hidden = true; document.body.classList.remove("no-scroll"); };
+		const tbox = document.querySelector(".js-trailerbox");
+		const frame = tbox.querySelector(".trailer__frame");
+		const closeT = () => { frame.innerHTML = ""; closeBox(tbox); };
+		document.querySelectorAll(".js-trailer").forEach((a) => {
+			if (!S.trailerYoutubeId) { a.hidden = true; return; }
+			a.href = `https://www.youtube.com/watch?v=${S.trailerYoutubeId}`; a.target = "_blank"; a.rel = "noopener";
+			a.addEventListener("click", (e) => {
+				if (location.protocol === "file:") return;   // sin servidor YouTube no deja incrustar: se abre en YouTube
+				e.preventDefault();
+				const origin = encodeURIComponent(location.origin);
+				frame.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${S.trailerYoutubeId}?autoplay=1&rel=0&playsinline=1&origin=${origin}" title="Encore House trailer" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+				openBox(tbox);
+			});
+		});
+		tbox.querySelector(".lightbox__close").addEventListener("click", closeT);
+		tbox.addEventListener("click", (e) => { if (e.target === tbox) closeT(); });
+
+		const box = document.querySelector(".js-lightbox");
+		const img = box.querySelector("img");
+		const links = [...document.querySelectorAll(".js-gallery a")];
+		let i = 0;
+		const show = (n) => { i = (n + links.length) % links.length; img.src = links[i].href; };
+		links.forEach((a, n) => a.addEventListener("click", (e) => { e.preventDefault(); show(n); openBox(box); }));
+		box.querySelector(".lightbox__close").addEventListener("click", () => closeBox(box));
+		box.querySelector(".lightbox__prev").addEventListener("click", (e) => { e.stopPropagation(); show(i - 1); });
+		box.querySelector(".lightbox__next").addEventListener("click", (e) => { e.stopPropagation(); show(i + 1); });
+		box.addEventListener("click", (e) => { if (e.target === box) closeBox(box); });
+		addEventListener("keydown", (e) => {
+			if (e.key === "Escape") { if (!tbox.hidden) closeT(); if (!box.hidden) closeBox(box); }
+			if (!box.hidden && e.key === "ArrowLeft") show(i - 1);
+			if (!box.hidden && e.key === "ArrowRight") show(i + 1);
+		});
+	})();
+	</script>
+</body>
+</html>
