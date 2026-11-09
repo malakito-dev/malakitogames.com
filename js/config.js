@@ -12,7 +12,7 @@ window.SITE = {
 	// Cómo crearla: tools/newsletter_google_sheets.gs. Vacío = "Sign up" abre un correo a contact@ con la dirección.
 	newsletterSheetUrl: "https://script.google.com/macros/s/AKfycbzXNp4lymACHVx6u9bDLc9CKdZvcT5buviXkNY0v1pg05eztfduZGmCWJ-I7NlARQb1iw/exec",
 	// Enlace a la carpeta del press kit (Google Drive, "cualquiera con el enlace"). Vacío = el botón no aparece.
-	pressKitUrl: "",
+	pressKitUrl: "https://drive.google.com/drive/folders/1iRSDZJJRUQxcJlGbD4pyMXygD1X91rVL?usp=sharing",
 	// Correo de contacto (se monta con JS para que no lo lean los bots de spam).
 	emailUser: "contact",
 	emailDomain: "malakitogames.com",
