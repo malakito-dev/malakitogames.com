@@ -81,8 +81,21 @@
 
 	// ============ Contacto (botón "Contact us") ============
 	const addr = S.emailUser ? `${S.emailUser}@${S.emailDomain}` : "";
+	// Si el PC no tiene programa de correo, mailto: no hace nada: por eso además se copia la dirección y se enseña.
 	document.querySelectorAll(".js-email").forEach((a) => {
-		if (addr) { a.href = `mailto:${addr}`; a.title = addr; } else a.hidden = true;
+		if (!addr) { a.hidden = true; return; }
+		a.href = `mailto:${addr}`; a.title = addr;
+		a.addEventListener("click", () => {
+			navigator.clipboard?.writeText(addr).catch(() => {});
+			let note = a.parentElement.querySelector(".contact__copied");
+			if (!note) {
+				note = document.createElement("p");
+				note.className = "contact__copied";
+				note.setAttribute("role", "status");
+				a.parentElement.appendChild(note);
+			}
+			note.innerHTML = `<a href="mailto:${addr}">${addr}</a><br>${t("contact.copied")}`;
+		});
 	});
 
 	// ============ Press kit ============

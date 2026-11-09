@@ -411,6 +411,8 @@ main > section:nth-child(6) { z-index: 5; }
 
 /* ============ Contacto ============ */
 .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.2rem 2.4rem; padding-top: clamp(70px, 9vw, 120px); padding-bottom: 60px; }
+.contact__copied { margin: 0.2rem 0 0; font-size: 0.85rem; text-align: center; color: var(--paper-faint); max-width: none; }
+.contact__copied a { color: var(--kraft); font-size: 1rem; }
 .contact__btns { display: flex; flex-direction: column; align-items: stretch; gap: 0.9rem; }
 .contact__btns .btn--ghost { transform: rotate(0.8deg); }
 .contact__btns .btn--ghost:hover { transform: rotate(-0.4deg) translateY(-2px) scale(1.03); }
@@ -443,6 +445,8 @@ main > section:nth-child(6) { z-index: 5; }
 	border-top: 1px solid rgba(195, 154, 104, 0.15);
 }
 
+.footer__legal { color: inherit; }
+.footer__legal:hover { color: var(--kraft); }
 .footer > :first-child { grid-column: 2; text-align: center; }
 .footer .lang { justify-self: end; }
 
