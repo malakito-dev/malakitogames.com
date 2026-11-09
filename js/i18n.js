@@ -2,7 +2,7 @@
 // (data-i18n-ph = placeholder de un campo). El inglés también está escrito en el HTML.
 window.I18N = {
 	en: {
-		"meta.title": "Encore House — malakito games",
+		"meta.title": "Malakito Games",
 		"meta.description": "Encore House is an atmospheric horror puzzle game where your voice is your lifeline: when you hear “Marco”, answer “Polo” into your mic to survive. Wishlist it on Steam.",
 		"steam.soon": "Wishlist on St<span class=\"mirror\">e</span>am",
 		"steam.wishlist": "Wishlist on St<span class=\"mirror\">e</span>am",
@@ -35,7 +35,7 @@ window.I18N = {
 		"community.fail": "Something went wrong. Please try again in a moment.",
 	},
 	es: {
-		"meta.title": "Encore House — malakito games",
+		"meta.title": "Malakito Games",
 		"meta.description": "Encore House es un juego de terror atmosférico y puzles en el que tu voz es tu salvavidas: cuando escuches “Marco”, responde “Polo” por el micrófono para sobrevivir. Añádelo a tu lista de deseados de Steam.",
 		"steam.soon": "Añádelo a tu lista de d<span class=\"mirror\">e</span>seados",
 		"steam.wishlist": "Añádelo a tu lista de d<span class=\"mirror\">e</span>seados",

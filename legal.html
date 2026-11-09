@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Aviso legal y privacidad — Malakito Games</title>
+	<title>Malakito Games Aviso legal</title>
 	<meta name="robots" content="noindex" />
 	<meta name="theme-color" content="#0b0907" />
 	<link rel="icon" href="assets/brand/favicon.ico" sizes="any" />
@@ -109,7 +109,7 @@
 			const show = () => {
 				document.documentElement.lang = lang;
 				document.querySelectorAll("[data-lang]").forEach((el) => el.classList.toggle("is-on", el.dataset.lang === lang));
-				document.title = lang === "es" ? "Aviso legal y privacidad — Malakito Games" : "Legal notice & privacy — Malakito Games";
+				document.title = lang === "es" ? "Malakito Games Aviso legal" : "Malakito Games Legal notice";
 				btn.textContent = lang === "es" ? "View in English" : "Ver en español";
 			};
 			btn.addEventListener("click", () => { lang = lang === "es" ? "en" : "es"; try { localStorage.setItem("lang", lang); } catch (e) {} show(); });
