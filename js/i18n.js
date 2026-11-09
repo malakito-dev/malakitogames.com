@@ -57,7 +57,7 @@ window.I18N = {
 		"community.ok": "¡Casi! Envía el correo que se acaba de abrir y quedas apuntado.",
 		"gallery.title": "Galería",
 		"contact.btn": "Contáctanos",
-		"press.btn": "Press kit",
+		"press.btn": "Kit de prensa",
 		"community.privacy": "Solo usaremos tu correo para enviarte novedades de Encore House. Puedes darte de baja cuando quieras respondiendo a cualquiera de nuestros correos.",
 		"community.sending": "Apuntándote…",
 		"community.done": "¡Listo! Te avisaremos de las novedades de Encore House.",
