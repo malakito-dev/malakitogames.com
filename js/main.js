@@ -94,7 +94,7 @@
 				note.setAttribute("role", "status");
 				a.parentElement.appendChild(note);
 			}
-			note.innerHTML = `<a href="mailto:${addr}">${addr}</a><br>${t("contact.copied")}`;
+			note.innerHTML = `<a href="mailto:${addr}">${addr}</a><br><span data-i18n="contact.copied">${t("contact.copied")}</span>`;
 		});
 	});
 
