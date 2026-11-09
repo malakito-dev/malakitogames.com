@@ -21,6 +21,7 @@ window.SITE = {
 		{ name: "YouTube", url: "https://www.youtube.com/@malakitogames", handle: "@malakitogames" },
 		{ name: "TikTok", url: "https://www.tiktok.com/@malakitogames", handle: "@malakitogames" },
 		{ name: "Instagram", url: "https://www.instagram.com/malakitogames/", handle: "@malakitogames" },
+		{ name: "X", url: "https://x.com/malakitogames", handle: "@malakitogames" },
 		{ name: "Reddit", url: "https://www.reddit.com/user/malakito_dev/", handle: "u/malakito_dev" },
 	],
 };
